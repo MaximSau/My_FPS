@@ -1,5 +1,6 @@
 from ursina import *
-from player import Player
+from player import *
+from ursina.prefabs.first_person_controller import FirstPersonController
 
 app = Ursina()
 
@@ -15,7 +16,7 @@ player = Player(
     air_control=0.5
 )
 
-
+enemy = AdvancedEnemy(position=(5, 0, 5))
 
 # карта
 map_entity = Entity(
